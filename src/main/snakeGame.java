@@ -23,6 +23,10 @@ public class snakeGame extends JFrame {
     	}
     
     public static void main(String[] args) {
+    	String filepath = "src/snakeMusic.wav";
+        music musicObject = new music();
+        musicObject.playMusic(filepath);
+        
         EventQueue.invokeLater(() -> {
             JFrame frame = new snakeGame();
             frame.setVisible(true);

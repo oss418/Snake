@@ -49,19 +49,19 @@ public class ScreenPanel extends JPanel implements ActionListener {
   }
 
   private void loadIcon() {
-    ImageIcon snakeBody = new ImageIcon("snake-body.png");
+    ImageIcon snakeBody = new ImageIcon("src/snake-body.jpg");
     Image resized1 = snakeBody.getImage();
     Image newimg1 = resized1.getScaledInstance(10, 10, java.awt.Image.SCALE_SMOOTH);
     snakeBody = new ImageIcon(newimg1);
     body_pic = snakeBody.getImage();
 
-    ImageIcon grape = new ImageIcon("grape.png");
+    ImageIcon grape = new ImageIcon("src/grape.png");
     Image resized2 = grape.getImage();
     Image newimg2 = resized2.getScaledInstance(10, 10, java.awt.Image.SCALE_SMOOTH);
     grape = new ImageIcon(newimg2);
     snack_pic = grape.getImage();
 
-    ImageIcon snakeHead = new ImageIcon("snake-head.jpeg");
+    ImageIcon snakeHead = new ImageIcon("src/snake-head.png");
     Image resized3 = snakeHead.getImage();
     Image newimg3 = resized3.getScaledInstance(10, 10, java.awt.Image.SCALE_SMOOTH);
     snakeHead = new ImageIcon(newimg3);
